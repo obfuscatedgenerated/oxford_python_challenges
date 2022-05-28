@@ -12,6 +12,6 @@ ax.plot(x,y)
 
 ax.set(title="Sine-Cosine Circle", xlabel="x", ylabel="y")
 ax.set_aspect("equal", adjustable="box")
-fig.canvas.set_window_title("Challenge 1.1: Sine-Cosine Circle")
+fig.canvas.manager.set_window_title("Challenge 1.1: Sine-Cosine Circle")
 
 plt.show()

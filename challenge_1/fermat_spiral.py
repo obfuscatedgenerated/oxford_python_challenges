@@ -13,6 +13,6 @@ ax.plot(x,y)
 
 ax.set(title="Fermat's Spiral", xlabel="x", ylabel="y")
 ax.set_aspect("equal", adjustable="box")
-fig.canvas.set_window_title("Challenge 1.2: Fermat's Spiral")
+fig.canvas.manager.set_window_title("Challenge 1.2: Fermat's Spiral")
 
 plt.show()

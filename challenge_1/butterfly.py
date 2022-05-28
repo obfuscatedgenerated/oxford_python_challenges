@@ -12,6 +12,6 @@ ax.plot(x,y)
 
 ax.set(title="Butterfly", xlabel="x", ylabel="y")
 ax.set_aspect("equal", adjustable="box")
-fig.canvas.set_window_title("Challenge 1.3: Butterfly")
+fig.canvas.manager.set_window_title("Challenge 1.3: Butterfly")
 
 plt.show()
