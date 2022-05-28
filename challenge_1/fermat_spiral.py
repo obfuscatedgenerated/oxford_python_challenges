@@ -3,9 +3,8 @@ import numpy as np
 
 domain = np.arange(0, 16 * np.pi, 0.01)
 
-a = 15
-x = a * np.sqrt(domain) * np.cos(domain)
-y = a * np.sqrt(domain) * np.sin(domain)
+x = np.sqrt(domain) * np.cos(domain)
+y = np.sqrt(domain) * np.sin(domain)
 
 fig, ax = plt.subplots()
 
