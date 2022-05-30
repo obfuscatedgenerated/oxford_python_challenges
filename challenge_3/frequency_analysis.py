@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt # import dependencies
 import wikipedia as wiki
 from collections import Counter
-from string import ascii_uppercase
 
 ARTICLE = "Oxford" # article to be analysed
 
@@ -9,14 +8,15 @@ page = wiki.page(ARTICLE, auto_suggest=False) # fetch page and store content
 
 content = page.content
 
-content_length = len(content) # get length of content and count of each letter using Counter from collections
-letter_count = Counter(content.upper())
+content_stripped = "".join(filter(str.isalpha, content)).upper() # strip non-alphanumeric characters and convert to uppercase
+
+content_length = len(content_stripped) # get length of content and count of each letter using Counter from collections
+letter_count = Counter(content_stripped)
 
 letter_percentage = {} # create empty dictionary to store letter percentages
 
-for letter in letter_count: # iterate through the letter count dict, and calculate the percentage of each letter if it is a letter
-    if letter in ascii_uppercase:
-        letter_percentage[letter] = (letter_count[letter] / content_length) * 100
+for letter in letter_count: # iterate through the letter count dict, and calculate the percentage of each letter
+    letter_percentage[letter] = (letter_count[letter] / content_length) * 100
 
 letter_percentage = {k: v for k, v in sorted(list(letter_percentage.items()))} # one-liner to sort dict by key
 
