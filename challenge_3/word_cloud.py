@@ -1,8 +1,6 @@
 from wordcloud import WordCloud # import dependencies
 import matplotlib.pyplot as plt
 import wikipedia as wiki
-from collections import Counter
-from string import ascii_uppercase
 
 ARTICLE = "Python_(programming_language)" # article to be analysed
 
