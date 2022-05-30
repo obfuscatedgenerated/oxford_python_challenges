@@ -1,5 +1,5 @@
 # oxford_python_challenges
-My solutions to some Python challenges from [Christ Church, Oxford's admissions site](https://www.chch.ox.ac.uk/admissions/python-challenges-page).
+My solutions to some Python challenges from [*Christ Church, Oxford*'s admissions site](https://www.chch.ox.ac.uk/admissions/python-challenges-page).
 
 ## Setup
 
