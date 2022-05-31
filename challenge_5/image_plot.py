@@ -29,4 +29,6 @@ for channel, color in enumerate(["r", "g", "b"]): # iterate over channels
 
 axes[1,0].set_xlim([0,256])
 
+fig.canvas.manager.set_window_title("Challenge 5.1: Image Plotting") # set the window title
+
 plt.show() # show the plot
