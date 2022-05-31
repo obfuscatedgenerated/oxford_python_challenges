@@ -10,9 +10,7 @@ image_negative = 255 - image # invert the image
 
 #fig = plt.figure() # create figure
 
-fig, axes = plt.subplots(2, 2) # create figure
-axes[0,0] = plt.subplot(2, 2, 1) # override subplot
-axes[0,1] = plt.subplot(2, 2, 2) # override subplot
+fig, axes = plt.subplots(2, 2) # create figure and axes
 axes[1,0] = plt.subplot(2, 1, 2) # override subplot with double width
 axes[1,1] = None # override subplot with None
 
